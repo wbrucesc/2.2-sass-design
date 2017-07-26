@@ -1,0 +1,147 @@
+/* Bootstrap Variables */
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/* Import Bootstrap */
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body{
+  // width: 1280px;
+  background-image: url("../skateboard-images/bg.jpg");
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+
+}
+
+
+.main_content{
+  width: 52%;
+  margin: 0 auto;
+  box-shadow: 0px 5px 2px 0px rgba(94,93,94,1);
+}
+
+
+#sub_bar li{
+  text-align: right;
+  list-style: none;
+}
+
+// #main_nav{
+//   text-align: center;
+// }
+
+#fb{
+  color: blue;
+}
+#rss{
+  color: orange;
+}
+#twitter{
+  color: blue;
+}
+#youtube{
+  color: red;
+}
+
+// .container{
+//   text-align: center;
+//   width: 50%;
+// }
+
+#main_nav{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#main_nav a{
+  background-color: #B02D2D;
+  text-decoration: none;
+  color: #FFF;
+  padding: 5px 30px;
+  font-family: "Assistant", sans-serif;
+  font-stretch: ultra-expanded;
+  box-shadow: 0px 5px 2px 0px rgba(94,93,94,1);
+}
+// .row{
+//   width: 100%;
+//   // background-color: #99423E;
+// }
+
+// .col-md-3 h3{
+//   background-color: #99423E;
+// }
+
+.main_pic{
+  // object-fit: cover;
+  width: 100%;
+  height: 265px;
+  object-fit: cover;
+  border: 4px solid #FFF;
+  margin-top: 15px;
+}
+
+.container-fluid{
+  padding: 20px 0;
+}
+
+.art1, .art2, .art3{
+  background-color: #FDFDFD;
+  padding: 10px 25px;
+  font-family: "Assistant", sans-serif;
+}
+
+.art1 h2, .art2 h2, .art3 h2{
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.art1 > .date, .art2 > .date,
+  .art3 > .date {
+  color: #A39F9F;
+}
+
+.art1 > .readmore, .art2 > .readmore,
+.art3 > .readmore{
+  color: #B02D2D;
+  text-align: center;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.articles > .col-md-4{
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.a, .b, .c, .d{
+  // background-size: cover;
+  color: #FFF;
+  text-align: center;
+  font-weight: 500;
+}
+
+.a{
+  background: url("../skateboard-images/sk8er-4.png") no-repeat top right/cover;
+  background-repeat: no-repeat;
+  // height: 100%;
+  height: 200px;
+
+}
+.b{
+  background: url("../skateboard-images/sk8er-3.png") no-repeat top left/cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+.c{
+  background: url("../skateboard-images/sk8er-2.png")no-repeat bottom right/cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+.d{
+  background: url("../skateboard-images/sk8er-1.png") no-repeat center left/cover;
+  background-repeat: no-repeat;
+  height: 180px;
+}
