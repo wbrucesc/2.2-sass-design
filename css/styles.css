@@ -5811,21 +5811,35 @@ body {
   margin: 0 auto;
   box-shadow: 0px 5px 2px 0px #5e5d5e; }
 
+#sub_bar {
+  margin-top: 20px; }
+
 #sub_bar li {
-  text-align: right;
-  list-style: none; }
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row; }
+
+#sub-text {
+  display: flex;
+  color: #fff;
+  font-size: 14px;
+  align-items: center; }
 
 #fb {
-  color: blue; }
+  color: #3b5998;
+  margin-right: 10px;
+  margin-left: 50px; }
 
 #rss {
-  color: orange; }
+  color: #EE802F;
+  margin-right: 10px; }
 
 #twitter {
-  color: blue; }
+  color: #0084b4;
+  margin-right: 10px; }
 
 #youtube {
-  color: red; }
+  color: #CC181E; }
 
 #main_nav {
   display: flex;
@@ -5882,22 +5896,63 @@ body {
 .a {
   background: url("../skateboard-images/sk8er-4.png") no-repeat top right/cover;
   background-repeat: no-repeat;
-  height: 200px; }
+  height: 200px;
+  border: 5px solid #FFF; }
 
 .b {
   background: url("../skateboard-images/sk8er-3.png") no-repeat top left/cover;
   background-repeat: no-repeat;
-  height: 200px; }
+  height: 200px;
+  border: 5px solid #FFF; }
 
 .c {
   background: url("../skateboard-images/sk8er-2.png") no-repeat bottom right/cover;
-  background-position: right;
+  background-position: -385px 0px;
   background-repeat: no-repeat;
-  height: 400px; }
+  height: 400px;
+  border: 5px solid #FFF; }
 
 .d {
   background: url("../skateboard-images/sk8er-1.png") no-repeat center left/cover;
   background-repeat: no-repeat;
-  height: 180px; }
+  height: 180px;
+  border: 5px solid #FFF;
+  margin-top: 20px; }
+
+.c > h1 {
+  position: relative;
+  top: 164px; }
+
+.a > h1, .b > h1, .d > h1 {
+  position: relative;
+  top: 79px;
+  width: inherit; }
+
+.form-horizontal {
+  margin-top: 20px;
+  padding-top: 30px; }
+
+body > main > div.end > form > fieldset > div:nth-child(1) {
+  width: 60%; }
+
+.contact {
+  text-align: left;
+  float: left;
+  width: 30%;
+  height: 75px;
+  padding-left: 10px; }
+
+.contact > p {
+  width: 175%; }
+
+textarea.form-control {
+  height: 70px; }
+
+.end > h2 {
+  font-size: 16px; }
+
+.end {
+  background-color: #FFF;
+  font-family: "Assistant", sans-serif; }
 
 /*# sourceMappingURL=styles.css.map */
