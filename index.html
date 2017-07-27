@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
@@ -18,7 +19,7 @@
       <ul class="subscribe">
 
         <li>
-          <p id=sub-text>SUBSCRIBE</p><i id="fb" class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
+          <p id=sub-text>SUBSCRIBE &bull;</p><i id="fb" class="fa fa-facebook-square fa-3x" aria-hidden="true"></i>
           <i id="rss" class="fa fa-rss fa-3x" aria-hidden="true"></i>
           <i id="twitter" class="fa fa-twitter fa-3x" aria-hidden="true"></i>
           <i id="youtube" class="fa fa-youtube fa-3x" aria-hidden="true"></i></li>
@@ -43,29 +44,52 @@
         </div>
       </div>
     </div> -->
+    <div class="container-fluid-1">
+      <div class="main_nav">
+        <div class="nav_row">
+          <div class="col-sm-12 col-md-3">
+            <h3 "topleft">SK8T NEWS</h3>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <h3>SKATEBOARDERS</h3>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <h3>BOARD DESIGN</h3>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <h3 id="topright">CONTACT US</h3>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <nav id="main_nav">
-      <a href="/">-- SK8T NEWS --</a>
-      <a href="/">-- SKATEBOARDERS --</a>
-      <a href="/">-- BOARD DESIGN --</a>
-      <a href="/">-- CONTACT US --</a>
-    </nav>
 
 
-    <img class="main_pic" src="skateboard-images/top-image.png" alt="">
+    <!-- <nav id="main_nav">
+      <a href="/">&mdash; SK8T NEWS &mdash;</a>
+      <a href="/">&mdash; SKATEBOARDERS &mdash;</a>
+      <a href="/">&mdash; BOARD DESIGN &mdash;</a>
+      <a href="/">&mdash; CONTACT US &mdash;</a>
+    </nav> -->
+
+    <div class="banner">
+      <img class="main_pic" src="skateboard-images/top-image.png" alt="">
+      <img class="fixed_logo" src="skateboard-images/peralta-logo.png" alt="">
+    </div>
+
 
     <div class="container-fluid">
       <div class="articles">
-        <div class="col-md-4">
+        <div class="col-sm-12 col-md-4">
           <div class="art1">
             <h2>Tony Hawk Foundation Raises Big Money At Celeb Fundraiser</h2>
             <p class="date">October 10, 2013</p>
-            <p>It was just over 90 degrees in Los Angeles, but that didn't stop the throngs from coming out to celebrate the 10th Annual Tony Hawk's Stand Up for Skateparks Benefit presented by SLS Hotel & Casino Las Vegas on Saturday at the Green Acres
+            <p>It was just over 90 degrees in Los Angeles, but that didn't stop the throngs from coming out to celebrate the 10th Annual Tony Hawk's Stand Up for Skateparks Benefit presented by SLS Hotel &amp; Casino Las Vegas on Saturday at the Green Acres
               Estate in Beverly Hills.</p>
             <p class="readmore">[ READ MORE ]</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-12 col-md-4">
           <div class="art2">
             <h2>Rodney Mullen: Pop an ollie and innovate! (TED Talk)</h2>
             <p class="date">March 10, 2013</p>
@@ -74,7 +98,7 @@
             <p class="readmore">[ READ MORE ]</p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-sm-12 col-md-4">
           <div class="art3">
             <h2>Ray Barbee Talks 'Ban This'</h2>
             <p class="date">October 4, 2013</p>
@@ -95,17 +119,17 @@
 
           <div class="row">
             <div class="col-md-6">
-              <div class="a">
+              <div class="sk8er-4">
                 <h1>LANCE MOUNTAIN</h1>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="b">
+              <div class="sk8er-3">
                 <h1>RODNEY MULLEN</h1>
               </div>
             </div>
             <div class="col-md-12">
-              <div class="d">
+              <div class="sk8er-1">
                 <h1>STEVE CABALLERO</h1>
               </div>
             </div>
@@ -114,7 +138,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="c">
+          <div class="sk8er-2">
             <h1>TOMMY GUERRERO</h1>
           </div>
         </div>
@@ -122,10 +146,28 @@
       </div>
     </div>
 
+    <div class="boards">
+      <img src="skateboard-images/sk8-1.png" alt="">
+      <img src="skateboard-images/sk8-2.png" alt="">
+      <img src="skateboard-images/sk8-3.png" alt="">
+      <img src="skateboard-images/sk8-4.png" alt="">
+      <img src="skateboard-images/sk8-5.png" alt="">
+      <img src="skateboard-images/sk8-6.png" alt="">
+      <img src="skateboard-images/sk8-7.png" alt="">
+      <img src="skateboard-images/sk8-8.png" alt="">
+      <img src="skateboard-images/sk8-9.png" alt="">
+      <img src="skateboard-images/sk8-10.png" alt="">
+    </div>
+
+
     <div class="end">
       <div class="contact">
         <h2>Contact Us for More Information</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam semper nulla ut odio scelerisque varius. Phasellus dui nunc, lacinia at vehicula congue, vehicula nec tellus. Morbi dignissim rutrum lorem at tincidunt.</p>
+        <p><i id="fb-end" class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+          <i id="rss-end" class="fa fa-rss fa-2x" aria-hidden="true"></i>
+          <i id="twitter-end" class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+          <i id="youtube-end" class="fa fa-youtube fa-2x" aria-hidden="true"></i></p>
       </div>
 
       <form class="form-horizontal">
