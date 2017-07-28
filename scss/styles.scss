@@ -86,10 +86,7 @@ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../s
   background-color: #fff;
 }
 
-// .container{
-//   text-align: center;
-//   width: 50%;
-// }
+// NAV BAR START
 
 h3{
   font-size: 1.25vw;
@@ -121,18 +118,6 @@ body > main > div.container-fluid-1 > div > div > div:nth-child(4){
   padding-right: 0;
 }
 
-// #topright{
-//   padding-right: 0;
-// }
-// #topleft{
-//   padding-left: 0;
-// }
-// 2:05 commented out
-// #main_nav{
-//   display: flex;
-//   justify-content: space-between;
-//
-// }
 //
 // #main_nav a{
 //   background-color: #B02D2D;
@@ -144,40 +129,50 @@ body > main > div.container-fluid-1 > div > div > div:nth-child(4){
 //   box-shadow: 0px 5px 2px 0px rgba(94,93,94,1);
 // }
 
+// NAV BAR END
 
 
-// .row{
-//   width: 100%;
-//   // background-color: #99423E;
-// }
-
-// .col-md-3 h3{
-//   background-color: #99423E;
-// }
-.banner {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.main_pic{
-  // object-fit: cover;
-  width: 100%;
-  height: 265px;
-  object-fit: cover;
-  border: 4px solid #FFF;
-  margin-top: 15px;
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-
+// BANNER start
 .fixed_logo{
-  position: absolute;
-  top: 90px;
-  left: 60px;
+  position: relative;
+  left: 30px;
+  top: 36px;
+  height: 272px;
+  width: 472px;
+  margin-top: 40px;
+  margin-bottom: 94px;
 }
+
+.banner{
+  background-image: url("../skateboard-images/top-image.png");
+  // background-blend-mode: darken;
+  background-size: cover;
+  margin-top: 86px;
+  border: 5px solid #fff;
+  background-position: -1px -44px;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  position: relative;
+  // height: 370px;
+  height: 100%;
+  // display: flex;
+  // justify-content: space-between;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../skateboard-images/grid.png");
+    background-size: contain;
+    // background-blend-mode: darken;
+
+  }
+}
+// Article section start //
 
 .container-fluid{
   padding: 20px 0;
@@ -214,11 +209,14 @@ body > main > div.container-fluid-1 > div > div > div:nth-child(4){
   padding-right: 4px;
 }
 
+// Skater images start //
+
 .sk8er-4, .sk8er-3, .sk8er-2, .sk8er-1{
   // background-size: cover;
   color: #FFF;
   text-align: center;
-  font-weight: 500;
+  font-weight: 900;
+  // font-family: 'Assistant';
   // border: 3px solid #FFF;
 }
 
@@ -263,13 +261,6 @@ body > main > div.container-fluid-1 > div > div > div:nth-child(4){
   width: inherit;
 }
 
-// @media (min-width : 992px){
-//   .c > h1{
-//     position: absolute;
-//     top: 164px;
-//     width: 322px;
-//   }
-// }
 .boards{
   margin-top: 20px;
   display: flex;
@@ -284,9 +275,7 @@ body > main > div.container-fluid-1 > div > div > div:nth-child(4){
   padding-top: 0;
   width: 48%;
 }
-// .form-group{
-//   width:
-// }
+
 
 .form-group > .col-md-4{
   width: 89.3333%;
@@ -295,9 +284,7 @@ body > main > div.container-fluid-1 > div > div > div:nth-child(4){
 body > main > div.end > form > fieldset > div:nth-child(1){
   // width: 60%;
 }
-// .form-group > .col-md-4{
-//   // width: 60%;
-// }
+
 
 .contact{
   text-align: left;
@@ -395,16 +382,96 @@ textarea.form-control{
   .col-md-6 > .sk8er-4{
     margin-bottom: 10px;
   }
+
   body > main > div.container-fluid-1 > div > div > div:nth-child(1){
     padding-left: 10px;
+    h3{
+    font-size: 16px;
+    }
+  }
+  body > main > div.container-fluid-1 > div > div > div:nth-child(2){
+    h3{
+      font-size: 16px;
+    }
+  }
+  body > main > div.container-fluid-1 > div > div > div:nth-child(3){
+    h3{
+      font-size: 16px;
+    }
   }
   body > main > div.container-fluid-1 > div > div > div:nth-child(4){
     padding-right: 10px;
+
+    h3{
+      font-size: 16px;
+  }
+  }
+
+  @media (max-width: 878px){
+    .boards{
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .banner {
+    margin-top: 255px;
+    background-position: 176px -58px;
   }
 }
 
 // MOBILE// not working properly???
-// @media (min-width: 320px) and (max-width: 425px){
+@media (min-width: 320px) and (max-width: 640px){
+  .subscribe{
+    text-align: center;
+  }
+  #sub-text{
+    display: none;
+  }
+  body > main > div.container-fluid-1 > div > div > div:nth-child(1){
+    padding-left: 10px;
+    h3{
+    font-size: 16px;
+    }
+  }
+  body > main > div.container-fluid-1 > div > div > div:nth-child(2){
+    h3{
+      font-size: 16px;
+    }
+  }
+  body > main > div.container-fluid-1 > div > div > div:nth-child(3){
+    h3{
+      font-size: 16px;
+    }
+  }
+  body > main > div.container-fluid-1 > div > div > div:nth-child(4){
+    padding-right: 10px;
+
+    h3{
+      font-size: 16px;
+  }
+  }
+  .boards{
+    display: block;
+    text-align: center;
+  }
+  .fixed_logo{
+    width: 100%;
+    background-color: #000;
+  }
+  .banner{
+    background-image: none;
+    margin-top: 20px;
+  }
+
+
+}
+
+  // .col-sm-12.col-md-3 > h3{
+  //     font-size: 16px;
+  // }
+// }
+
 //   body > main{
 //   width: 98%;
 //   }

@@ -5887,25 +5887,34 @@ body > main > div.container-fluid-1 > div > div > div:nth-child(1) {
 body > main > div.container-fluid-1 > div > div > div:nth-child(4) {
   padding-right: 0; }
 
-.banner {
-  position: relative;
-  top: 0;
-  left: 0; }
-
-.main_pic {
-  width: 100%;
-  height: 265px;
-  object-fit: cover;
-  border: 4px solid #FFF;
-  margin-top: 15px;
-  position: relative;
-  top: 0;
-  left: 0; }
-
 .fixed_logo {
-  position: absolute;
-  top: 90px;
-  left: 60px; }
+  position: relative;
+  left: 30px;
+  top: 36px;
+  height: 272px;
+  width: 472px;
+  margin-top: 40px;
+  margin-bottom: 94px; }
+
+.banner {
+  background-image: url("../skateboard-images/top-image.png");
+  background-size: cover;
+  margin-top: 86px;
+  border: 5px solid #fff;
+  background-position: -1px -44px;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  height: 100%; }
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("../skateboard-images/grid.png");
+    background-size: contain; }
 
 .container-fluid {
   padding: 20px 0; }
@@ -5938,7 +5947,7 @@ body > main > div.container-fluid-1 > div > div > div:nth-child(4) {
 .sk8er-4, .sk8er-3, .sk8er-2, .sk8er-1 {
   color: #FFF;
   text-align: center;
-  font-weight: 500; }
+  font-weight: 900; }
 
 .sk8er-4 {
   background: url("../skateboard-images/sk8er-4.png") no-repeat top right/cover;
@@ -6064,8 +6073,60 @@ textarea.form-control {
 
   body > main > div.container-fluid-1 > div > div > div:nth-child(1) {
     padding-left: 10px; }
+    body > main > div.container-fluid-1 > div > div > div:nth-child(1) h3 {
+      font-size: 16px; }
+
+  body > main > div.container-fluid-1 > div > div > div:nth-child(2) h3 {
+    font-size: 16px; }
+
+  body > main > div.container-fluid-1 > div > div > div:nth-child(3) h3 {
+    font-size: 16px; }
 
   body > main > div.container-fluid-1 > div > div > div:nth-child(4) {
-    padding-right: 10px; } }
+    padding-right: 10px; }
+    body > main > div.container-fluid-1 > div > div > div:nth-child(4) h3 {
+      font-size: 16px; } }
+@media (min-width: 642px) and (max-width: 991px) and (max-width: 878px) {
+  .boards {
+    display: block;
+    text-align: center; } }
+@media (min-width: 642px) and (max-width: 991px) {
+  .banner {
+    margin-top: 255px;
+    background-position: 176px -58px; } }
+@media (min-width: 320px) and (max-width: 640px) {
+  .subscribe {
+    text-align: center; }
+
+  #sub-text {
+    display: none; }
+
+  body > main > div.container-fluid-1 > div > div > div:nth-child(1) {
+    padding-left: 10px; }
+    body > main > div.container-fluid-1 > div > div > div:nth-child(1) h3 {
+      font-size: 16px; }
+
+  body > main > div.container-fluid-1 > div > div > div:nth-child(2) h3 {
+    font-size: 16px; }
+
+  body > main > div.container-fluid-1 > div > div > div:nth-child(3) h3 {
+    font-size: 16px; }
+
+  body > main > div.container-fluid-1 > div > div > div:nth-child(4) {
+    padding-right: 10px; }
+    body > main > div.container-fluid-1 > div > div > div:nth-child(4) h3 {
+      font-size: 16px; }
+
+  .boards {
+    display: block;
+    text-align: center; }
+
+  .fixed_logo {
+    width: 100%;
+    background-color: #000; }
+
+  .banner {
+    background-image: none;
+    margin-top: 20px; } }
 
 /*# sourceMappingURL=styles.css.map */
